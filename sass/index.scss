@@ -1,0 +1,280 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background:#12151c;
+}
+.navigasi{
+    z-index: 3;
+    display: flex;
+    justify-content: space-around;
+    height: 10vh;
+    align-items: center;
+    background:#1b222c;
+    position: fixed;
+    width: 100vw;
+    .brand{
+        justify-content: space-between;
+        pointer-events: none;
+        font-family: 'Lobster', cursive;
+        font-size: 1.5em;
+        color: whitesmoke;
+        text-shadow: 1px 2px black;
+        opacity: 1;
+    }
+    ul{
+        list-style: none;
+        li{
+            transition: .5s;
+            display: inline;  
+            padding: 0.5rem 1rem;
+            margin:0 0.2rem;
+            border-radius: 15px;
+            a{              
+                font-family: 'Lato', sans-serif;
+                font-weight: 400;
+                font-size: 1.2em;
+                text-decoration: none;
+                color: white;
+            }
+            #active{
+                transition: .3s;
+                    background: white;
+                    a{
+                        color: black;
+                        text-shadow: none;
+                    }
+            }
+        }
+    }
+}
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-color: grey;
+    background:url(../img/Banner.jpg);
+    height: 100vh;
+    .inner-banner{
+        h1{
+            transition: .5s;
+            position: relative;
+            z-index: 1;
+            font-family: 'Lato', sans-serif;
+            font-size: 3em;
+            color: white;
+            text-shadow: 1px 1px black;
+            pointer-events: none;
+            opacity: 0.95;
+        }
+        .tombol-banner{
+            position: relative;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            margin-top: 1.5rem;
+            a{
+                transition: .5s;
+                text-decoration: none;
+                color: white;
+                font-family: 'Lato', sans-serif;
+                background-color: #1b222c;
+                padding: 0.75rem 3rem;
+                border-radius: 20px;
+                text-shadow: 1px 1px black;
+            }
+        }        
+    }  
+}
+.banner::after{
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: black;
+    opacity: 0.5;
+}
+.profil{
+    background: linear-gradient(to bottom, black, #12151c);
+    height: 100vh;
+    .foto-profil{
+        display: flex;
+        justify-content: center;
+        img{
+            margin-top: 25vh;
+            border-radius: 50%;
+            border:5px solid #12151c;
+        }
+    }
+    .teks-profil{
+        text-align: center;
+        h1{
+            margin-top: 1.5rem;
+            transition: .5s;
+            position: relative;
+            z-index: 1;
+            font-family: 'Libre Baskerville', serif;
+            font-size: 3em;
+            color: white;
+            text-shadow: 1px 1px black;
+            pointer-events: none;
+            opacity: 0.9;
+        }
+        p{
+            font-family: 'Lato', sans-serif;
+            color: white;
+            font-size: 1.4em;
+            pointer-events: none;
+        }
+    }
+}
+.tentangsaya{
+    min-height: 85vh;
+    max-width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+    .inner-tentangsaya{
+        padding-top: 20vh;
+        h2{
+            text-align: center;
+            transition: .5s;
+            font-family: 'Lato', sans-serif;
+            font-size: 3em;
+            color: white;
+            pointer-events: none;
+            opacity: 0.9;
+        }
+        p{
+            margin-top: 1rem;
+            text-align: justify;
+            font-family: 'Lato', sans-serif;
+            color: white;
+            text-shadow: 0.5px 0 black;
+            pointer-events: none;
+            font-size: 1.1em;
+        }
+    }
+}
+.project{
+    padding-top: 13vh;
+    text-align: center;
+    h1{
+        font-family: 'Lato', sans-serif;
+        text-shadow: 1px 1px black;
+        pointer-events: none;
+        color: white;      
+    }
+    p{
+        padding-top: 1rem;
+        color: white;
+        font-family: 'Lato', sans-serif;
+        text-shadow: 1px 1px black;
+        pointer-events: none;
+    }
+}
+.card{
+    transition: .25s;
+    margin-top: 2rem;
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    border: 1px solid #531516;
+    background: #531516;
+    img{
+        width: 100%;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+    }
+    .container{
+        margin: 1rem 3rem;
+        h2{
+            transition: .5s;
+            font-family: 'Lato', sans-serif;
+            text-shadow: 1px 1px black;
+            pointer-events: none;
+            color: white;      
+        }
+        h2,p{
+            margin-left: -1rem;
+        }
+        p, ul{
+            transition: .5s;
+            color: white;
+            font-family: 'Lato', sans-serif;
+            text-shadow: 1px 1px black;
+            pointer-events: none;
+        }
+        a{
+            transition: .5s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            text-decoration: none;
+            margin: 1rem 0;
+            padding: 0.2rem 0;
+            background: white;
+            border-radius: 10px;
+        }
+        p, ul{
+            margin-top: 0.3rem;
+        }
+    }
+}
+
+footer{
+    
+    display: flex;
+    justify-content: center;
+    height: 120%;
+    margin-top: 5rem;
+    background: #1b222c;
+    .judulfooter{
+        h1{
+            transition: .5s;
+            margin-top: 3rem;
+            font-family: 'Lato', sans-serif;
+            color: white;
+            font-size: 2em;
+        }
+        .isifooter{
+            margin-top: 1rem;
+            h2{
+                font-family: 'Lato', sans-serif;
+                color: white;
+                font-size: 1em;
+            }
+            ul{
+                margin-top: 1rem;
+                margin-bottom: 2rem;
+                list-style: none;
+                li{
+                    margin-top: 0.5rem;
+                    color: white;
+                    .email{
+                        width: 10px;
+                    }
+                }
+                
+            }
+        }       
+    }
+}
+#Active{
+
+    background: white;
+    a{
+        color: black;
+        text-shadow: none;
+    }   
+}

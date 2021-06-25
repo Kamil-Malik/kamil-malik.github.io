@@ -1,0 +1,361 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #12151c;
+}
+
+.navigasi {
+  z-index: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 10vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #1b222c;
+  position: fixed;
+  width: 100vw;
+}
+
+.navigasi .brand {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  pointer-events: none;
+  font-family: 'Lobster', cursive;
+  font-size: 1.5em;
+  color: whitesmoke;
+  text-shadow: 1px 2px black;
+  opacity: 1;
+}
+
+.navigasi ul {
+  list-style: none;
+}
+
+.navigasi ul li {
+  -webkit-transition: .5s;
+  transition: .5s;
+  display: inline;
+  padding: 0.5rem 1rem;
+  margin: 0 0.2rem;
+  border-radius: 15px;
+}
+
+.navigasi ul li a {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 1.2em;
+  text-decoration: none;
+  color: white;
+}
+
+.navigasi ul li #active {
+  -webkit-transition: .3s;
+  transition: .3s;
+  background: white;
+}
+
+.navigasi ul li #active a {
+  color: black;
+  text-shadow: none;
+}
+
+.banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-size: cover;
+  background-color: grey;
+  background: url(../img/Banner.jpg);
+  height: 100vh;
+}
+
+.banner .inner-banner h1 {
+  -webkit-transition: .5s;
+  transition: .5s;
+  position: relative;
+  z-index: 1;
+  font-family: 'Lato', sans-serif;
+  font-size: 3em;
+  color: white;
+  text-shadow: 1px 1px black;
+  pointer-events: none;
+  opacity: 0.95;
+}
+
+.banner .inner-banner .tombol-banner {
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.banner .inner-banner .tombol-banner a {
+  -webkit-transition: .5s;
+  transition: .5s;
+  text-decoration: none;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  background-color: #1b222c;
+  padding: 0.75rem 3rem;
+  border-radius: 20px;
+  text-shadow: 1px 1px black;
+}
+
+.banner::after {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: black;
+  opacity: 0.5;
+}
+
+.profil {
+  background: -webkit-gradient(linear, left top, left bottom, from(black), to(#12151c));
+  background: linear-gradient(to bottom, black, #12151c);
+  height: 100vh;
+}
+
+.profil .foto-profil {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.profil .foto-profil img {
+  margin-top: 25vh;
+  border-radius: 50%;
+  border: 5px solid #12151c;
+}
+
+.profil .teks-profil {
+  text-align: center;
+}
+
+.profil .teks-profil h1 {
+  margin-top: 1.5rem;
+  -webkit-transition: .5s;
+  transition: .5s;
+  position: relative;
+  z-index: 1;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 3em;
+  color: white;
+  text-shadow: 1px 1px black;
+  pointer-events: none;
+  opacity: 0.9;
+}
+
+.profil .teks-profil p {
+  font-family: 'Lato', sans-serif;
+  color: white;
+  font-size: 1.4em;
+  pointer-events: none;
+}
+
+.tentangsaya {
+  min-height: 85vh;
+  max-width: 60vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tentangsaya .inner-tentangsaya {
+  padding-top: 20vh;
+}
+
+.tentangsaya .inner-tentangsaya h2 {
+  text-align: center;
+  -webkit-transition: .5s;
+  transition: .5s;
+  font-family: 'Lato', sans-serif;
+  font-size: 3em;
+  color: white;
+  pointer-events: none;
+  opacity: 0.9;
+}
+
+.tentangsaya .inner-tentangsaya p {
+  margin-top: 1rem;
+  text-align: justify;
+  font-family: 'Lato', sans-serif;
+  color: white;
+  text-shadow: 0.5px 0 black;
+  pointer-events: none;
+  font-size: 1.1em;
+}
+
+.project {
+  padding-top: 13vh;
+  text-align: center;
+}
+
+.project h1 {
+  font-family: 'Lato', sans-serif;
+  text-shadow: 1px 1px black;
+  pointer-events: none;
+  color: white;
+}
+
+.project p {
+  padding-top: 1rem;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  text-shadow: 1px 1px black;
+  pointer-events: none;
+}
+
+.card {
+  -webkit-transition: .25s;
+  transition: .25s;
+  margin-top: 2rem;
+  width: 70vw;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+  border: 1px solid #531516;
+  background: #531516;
+}
+
+.card img {
+  width: 100%;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.card .container {
+  margin: 1rem 3rem;
+}
+
+.card .container h2 {
+  -webkit-transition: .5s;
+  transition: .5s;
+  font-family: 'Lato', sans-serif;
+  text-shadow: 1px 1px black;
+  pointer-events: none;
+  color: white;
+}
+
+.card .container h2, .card .container p {
+  margin-left: -1rem;
+}
+
+.card .container p, .card .container ul {
+  -webkit-transition: .5s;
+  transition: .5s;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  text-shadow: 1px 1px black;
+  pointer-events: none;
+}
+
+.card .container a {
+  -webkit-transition: .5s;
+  transition: .5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: black;
+  text-decoration: none;
+  margin: 1rem 0;
+  padding: 0.2rem 0;
+  background: white;
+  border-radius: 10px;
+}
+
+.card .container p, .card .container ul {
+  margin-top: 0.3rem;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 120%;
+  margin-top: 5rem;
+  background: #1b222c;
+}
+
+footer .judulfooter h1 {
+  -webkit-transition: .5s;
+  transition: .5s;
+  margin-top: 3rem;
+  font-family: 'Lato', sans-serif;
+  color: white;
+  font-size: 2em;
+}
+
+footer .judulfooter .isifooter {
+  margin-top: 1rem;
+}
+
+footer .judulfooter .isifooter h2 {
+  font-family: 'Lato', sans-serif;
+  color: white;
+  font-size: 1em;
+}
+
+footer .judulfooter .isifooter ul {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  list-style: none;
+}
+
+footer .judulfooter .isifooter ul li {
+  margin-top: 0.5rem;
+  color: white;
+}
+
+footer .judulfooter .isifooter ul li .email {
+  width: 10px;
+}
+
+#Active {
+  background: white;
+}
+
+#Active a {
+  color: black;
+  text-shadow: none;
+}
+/*# sourceMappingURL=index.css.map */
