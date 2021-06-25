@@ -1,0 +1,195 @@
+@media(max-width:426px){
+    .profil{
+        img{
+            width: 50vw;
+        }
+        .teks-profil{
+            h1{
+                margin:10px 10px;
+            }
+            p{
+                margin: 10px 10px;
+            }
+        }
+    }
+}
+@media(max-width:576px){
+   .profil{
+        img{
+            width: 50vw;
+        }
+        .teks-profil{
+            p{
+                text-align: center;
+            }
+        }
+   }
+   .banner{
+        .inner-banner{
+            width: 70vw;
+            h1{
+                transition: .5s;
+                font-size: 1em;  
+            }         
+        }      
+    }
+}
+@media(max-width:700px){
+    
+    nav{
+        .navigasi{
+            ul{
+                display: none;
+            }
+        }
+    }
+    .profil{
+        background: linear-gradient(to bottom, black, #12151c);
+        height: 100vh;
+        .foto-profil{
+            display: flex;
+            justify-content: center;
+            
+        }
+        .teks-profil{
+            text-align: center;
+            h1{
+                transition: .5s;
+                font-size: 2em;
+            }
+            p{
+                font-size: 0.8em;
+            }
+        }
+    }
+    .card{
+        .container{
+            h2{
+                transition: .5s;
+                font-size: 1em;
+            }           
+        }
+    }
+}
+@media(min-width:769px){
+    .project{
+        h1{
+            transition: .5s;
+            font-size: 3em;   
+        }
+        p{
+            transition: .5s;
+            font-size: 1.3em;
+        }
+    }
+    .pembatas{
+        display: none;
+       }
+}
+@media(max-width:768px){
+    .tentangsaya{
+        max-width: 75vw;
+    }
+    .project{
+        width: 80vw;
+        margin: 0 auto;
+        h1{
+            transition: .5s;
+            font-size: 2em;     
+        }
+        p{  
+            transition: .5s;
+            font-size: 1em;
+        }
+    }
+    .tentangsaya{
+        max-width: 60vw;
+        margin-left: auto;
+        margin-right: auto;
+        .inner-tentangsaya{
+            padding-top: 20vh;
+            h2{
+                transition: .5s;
+                font-size: 2em;
+            }
+            p{
+                transition: .5s;
+                font-size: 1em;
+            }
+        }
+    }
+    footer{
+        display: flex;
+        justify-content: center;
+        height: 120%;
+        margin-top: 5rem;
+        background: #1b222c;
+        .judulfooter{
+            h1{
+                transition: .5s;
+                font-size: 1em;
+            }       
+        }
+    }
+}
+@media(max-width:968px){
+    .banner{
+        .inner-banner{
+            h1{
+                font-size: 1.7em;
+                transition: 0.5s;
+                text-align: center;
+            } 
+        }   
+    }
+}
+@media(min-width:1080px){
+    nav{
+        .navigasi{
+            ul{
+                li:hover{
+                    transition: .3s;
+                    background: white;
+                    a{
+                        color: black;
+                        text-shadow: none;
+                    }
+                }
+            }
+        }
+    }
+    .banner{
+        .inner-banner{
+            .tombol-banner{
+                a:hover{
+                    transition: .5s;
+                    background-color: #fff;
+                    color: black;
+                    text-shadow: none;
+                }
+            }        
+        }  
+    }
+    .card{
+        transition: .25s;
+        margin-top: 2rem;
+        width: 70vw;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 15px;
+        border: 1px solid #531516;
+        background: #531516;
+        img{
+            width: 100%;
+            border-top-right-radius: 15px;
+            border-top-left-radius: 15px;
+        }
+        .container{
+            a:hover{
+                transition: .3s;
+                background: black;
+                color: white;
+            }
+        }
+    }
+}
