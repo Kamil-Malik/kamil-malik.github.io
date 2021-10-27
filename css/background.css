@@ -1,0 +1,25 @@
+
+.body-web{
+    background:url(../img/Banner.jpg);
+}
+
+.body-web::after{
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: black;
+    opacity: 0.5;
+    height: 400vh;
+}
+
+.text-deskripsi{
+    margin-top: -19px;
+}
+
+.profile-picture{
+    margin-top: 9rem;
+}
